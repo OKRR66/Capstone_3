@@ -1,20 +1,20 @@
-# EmporiUm Regional Sales Analysis — Maryland & Maine
+# EmporiUm Regional Sales Analysis - Maryland & Maine
 
 **Author:** Onur Karaer
-**Course:** Year Up United — Data Analytics Training Academy (Week 12 Capstone: Power BI)
+**Course:** Year Up United - Data Analytics Training Academy (Week 12 Capstone: Power BI)
 
 ---
 
 ## Project Overview
 
-This project analyzes four years of sales data (2022–2025) for **EmporiUm**, a virtual student bookstore with both in-store and online sales. The Power BI report focuses on two assigned territories — **Maryland** and **Maine** — comparing their performance to surface insights and recommendations for the regional sales team.
+This project analyzes four years of sales data (2022–2025) for **EmporiUm**, a virtual student bookstore with both in-store and online sales. The Power BI report focuses on two assigned territories - **Maryland** and **Maine** - comparing their performance to surface insights and recommendations for the regional sales team.
 
 ---
 
 ## Data Sources
 
-- **Capstone3_Sample_Sales.xlsx** — Store Sales, Online Sales, Products, Inventory Categories, Store Locations, Management Team, and Shipper List sheets.
-- **book_list.txt** — Titles and authors for general-audience (non-textbook) books.
+- **Capstone3_Sample_Sales.xlsx** - Store Sales, Online Sales, Products, Inventory Categories, Store Locations, Management Team, and Shipper List sheets.
+- **book_list.txt** - Titles and authors for general-audience (non-textbook) books.
 
 ---
 
@@ -34,10 +34,10 @@ The data model connects Store Sales and Online Sales to Products and Store Locat
 
 ## Tools Used
 
-- **Power BI Desktop** — data modeling, DAX measures, and report design
-- **Power Query** — data cleaning and transformation
-- **Power BI Service** — online publishing
-- **GitHub** — version control
+- **Power BI Desktop** - data modeling, DAX measures, and report design
+- **Power Query** - data cleaning and transformation
+- **Power BI Service** - online publishing
+- **GitHub** - version control
 
 ---
 
@@ -50,7 +50,7 @@ The data model connects Store Sales and Online Sales to Products and Store Locat
 
 ## Repository Contents
 
-- `Karaer_capstone3.pbix` — Power BI report file
-- `Capstone3_Sample_Sales.xlsx` — source sales data
-- `book_list.txt` — source book/author list
-- `README.md` — this file
+- `Karaer_capstone3.pbix` - Power BI report file
+- `Capstone3_Sample_Sales.xlsx` - source sales data
+- `book_list.txt` - source book/author list
+- `README.md` - this file
