@@ -44,7 +44,7 @@ The data model connects Store Sales and Online Sales to Products and Store Locat
 ## Links
 
 - **Video Presentation:** _[Add your recording link here]_
-- **Published Power BI Report:** _[Add your Power BI Service link here]_
+- **Published Power BI Report:** https://app.powerbi.com/links/U3j_dQ0Z0u?ctid=bbce5c37-f181-4d0c-9310-7f877336e1cf&pbi_source=linkShare
 
 ---
 
