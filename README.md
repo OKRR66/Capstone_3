@@ -43,7 +43,7 @@ The data model connects Store Sales and Online Sales to Products and Store Locat
 
 ## Links
 
-- **Video Presentation:** 
+- **Video Presentation:** https://yearuptemp-my.sharepoint.com/:v:/g/personal/okaraer_my_yearupunited_org/IQADvjlEFW2gRp7ER7AXvkYTAbmj2yKab26_yOBJ1kyar0k?e=DZqFnA
 - **Published Power BI Report:** https://app.powerbi.com/links/r-1TAmSNKH?ctid=bbce5c37-f181-4d0c-9310-7f877336e1cf&pbi_source=linkShare&bookmarkGuid=de6b64a4-1588-4d59-833f-886b4aff6130
 
 ---
