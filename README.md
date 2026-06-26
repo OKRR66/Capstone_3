@@ -1,36 +1,48 @@
-# EmporiUm Regional Sales Analysis - Maryland & Maine
+## EmporiUm Regional Sales Analysis - Maryland & Maine
 
-**Author:** Onur Karaer
-**Course:** Year Up United - Data Analytics Training Academy (Week 12 Capstone: Power BI)
+Author: Onur Karaer
+Course: Year Up United - Data Analytics Training Academy (Week 12 Capstone: Power BI)
 
----
 
 ## Project Overview
 
-This project analyzes four years of sales data (2022–2025) for **EmporiUm**, a virtual student bookstore with both in-store and online sales. The Power BI report focuses on two assigned territories - **Maryland** and **Maine** - comparing their performance to surface insights and recommendations for the regional sales team.
+This project analyzes four years of sales data (2022-2025) for EmporiUm, a virtual student bookstore. The Power BI report focuses on the store (in-person) performance of two assigned territories - Maryland and Maine - comparing them to surface insights and recommendations for the regional sales team. Online sales are handled by a separate team and are kept out of the territory analysis.
 
----
 
 ## Data Sources
 
-- **Capstone3_Sample_Sales.xlsx** - Store Sales, Online Sales, Products, Inventory Categories, Store Locations, Management Team, and Shipper List sheets.
-- **book_list.txt** - Titles and authors for general-audience (non-textbook) books.
 
----
+Capstone3_Sample_Sales.xlsx - Store Sales, Online Sales, Products, Store Locations, Management Team, and Shipper List sheets.
+book_list.txt - Titles and authors for general-audience (non-textbook) books.
+
+
 
 ## Data Cleaning & Modeling
 
-Key transformation steps performed in Power Query:
+The two transaction sheets were combined into a single Sales table, and supporting tables were cleaned and reshaped in Power Query.
 
-- **Store Sales:** removed error rows (`#N/A`) and standardized the category column, merging "General" into "Books (General)".
-- **Online Sales:** combined separate Year/Month/Day columns into a single date field; renamed columns to align with Store Sales.
-- **Store Locations:** replaced inconsistent state abbreviations (CT, ME, NY, MA) with full state names to prevent duplicate states in visuals.
-- **Inventory Categories:** corrected misread header row.
-- **Book List:** extracted author names from the raw text and merged the list into the Products table to attach authors to general books.
+Combining the sales data
 
-The data model connects Store Sales and Online Sales to Products and Store Locations, with a dedicated Date table supporting all time-based analysis. Measures were created for total sales by state, average order value, year-over-year growth, and transaction counts.
 
----
+Added a Store ID value of "Online" to the Online Sales rows so they could be distinguished from physical store rows after combining.
+Combined the separate Year / Month / Day columns in Online Sales into a single Transaction Date field.
+Appended Store Sales and Online Sales into one Sales table. Store rows carry a State (the store's location); online rows carry a Ship-to State (the delivery destination). These are kept as two separate columns so the two concepts are never mixed - territory analysis uses State and excludes online rows.
+
+
+Cleaning the supporting tables
+
+
+Store Details: built from Store Locations, standardizing inconsistent state abbreviations (e.g. "ME" → "Maine") so merges would match, then merging in Store Manager, Region, and Regional Director from the Management Team sheet.
+Management Team: split the single sheet into three clean reference tables - Region→Director, State→Manager, and State→Region - and joined them into Store Details.
+Products: extracted author names from book_list.txt (parsing the "Title by Author" text) and merged them in, so general books carry an author while textbooks and other items do not.
+
+
+Modeling
+
+
+The Sales table connects to Products (Prod Num), Store Details (Store ID), Shipper List (Ship-to State), and a dedicated DateTable (Transaction Date) marked as the official date table.
+Measures were written as needed for sales by state, average order value, year-over-year growth, and transaction counts - all scoped to store sales for the territory analysis.
+
 
 ## Tools Used
 
