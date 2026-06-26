@@ -43,14 +43,14 @@ The data model connects Store Sales and Online Sales to Products and Store Locat
 
 ## Links
 
-- **Video Presentation:** https://yearuptemp-my.sharepoint.com/:v:/g/personal/okaraer_my_yearupunited_org/IQBNfaLKgA-kRqrTFp7UqUJDAeOj1KOi23xeJRK6nALbldw?e=j4Vtwk
-- **Published Power BI Report:** https://app.powerbi.com/links/U3j_dQ0Z0u?ctid=bbce5c37-f181-4d0c-9310-7f877336e1cf&pbi_source=linkShare
+- **Video Presentation:** 
+- **Published Power BI Report:** https://app.powerbi.com/links/r-1TAmSNKH?ctid=bbce5c37-f181-4d0c-9310-7f877336e1cf&pbi_source=linkShare&bookmarkGuid=de6b64a4-1588-4d59-833f-886b4aff6130
 
 ---
 
 ## Repository Contents
 
-- `Karaer_capstone3.pbix` - Power BI report file
+- `Karaer_Capstone_3.pbix` - Power BI report file
 - `Capstone3_Sample_Sales.xlsx` - source sales data
 - `book_list.txt` - source book/author list
 - `README.md` - this file
